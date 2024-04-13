@@ -3,7 +3,7 @@
 
     $prevew = new PreviewProvider($con, $userLoggedIn);
     echo $prevew->createTVShowPreviewVideo();
-    $con = new CategoryConatiners($con, $userLoggedIn);
+    $containers  = new CategoryConatiners($con, $userLoggedIn);
     echo $containers->showTVShowCategories();
     
 
