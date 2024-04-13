@@ -1,10 +1,8 @@
 <?php
-    require_once("includes/header.php");
+session_start();
+session_destroy();
+header("Location: login.php");
 
-    $prevew = new PreviewProvider($con, $userLoggedIn);
-    echo $prevew->createMoviesPreviewVideo();
-    $containers = new CategoryConatiners($con, $userLoggedIn);
-    echo $containers->showMoviesCategories();
-    
+
 
 ?>
